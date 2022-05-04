@@ -38,6 +38,7 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
         name: webpack artifacts
+        path: public
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
