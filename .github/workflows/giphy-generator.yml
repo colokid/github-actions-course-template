@@ -3,7 +3,7 @@ name: GIPHY generatory
 on:
   issues:
     types: [opened, edited]
-  pull_requests:
+  pull_request:
     types: [opened, edited]
   issue_comment:
     types: [created, edited]
@@ -12,7 +12,7 @@ on:
 jobs:
   giphy-generator:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: GIPHY Generator
         uses: IAmHughes/giphy-generator@v1.0.0
