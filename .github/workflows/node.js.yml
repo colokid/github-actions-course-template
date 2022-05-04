@@ -18,7 +18,7 @@ jobs:
         run:
           npm install
           npm run build
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v1
         with:
           name: webpack artifacts
           path: publc/
@@ -34,7 +34,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
     - uses: actions/download-artifact@v3
       with:
         name: webpack artifacts
