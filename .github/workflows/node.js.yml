@@ -18,7 +18,7 @@ jobs:
         run:
           npm install
           npm run build
-          echo GITHUB_TOKEN = ${{ secrets.GITHUB_TOKEN }}
+          echo GITHUB_TOKEN is ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v3
         with:
           name: webpack artifacts
