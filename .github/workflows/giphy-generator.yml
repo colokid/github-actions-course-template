@@ -12,6 +12,9 @@ jobs:
   giphy-generator:
     name: GIPHY Generator
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: GIPHY Generator
         id: giphy_generator
