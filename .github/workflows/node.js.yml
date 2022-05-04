@@ -18,6 +18,10 @@ jobs:
         run:
           npm install
           npm run build
+      - uses: actions/upload-artfict@main
+        with:
+          name: webpack artifacts
+          path: publc/
 
   test:
     runs-on: ubuntu-latest
