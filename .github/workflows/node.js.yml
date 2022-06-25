@@ -27,14 +27,14 @@ jobs:
     - name: Show selected version
       run: |
         echo Using build prefix: ${BUILD_PREFIX}
-        echo Installing node version: ${{ github.events.inputs.node-version }}
+        echo Installing node version: ${{ github.event.inputs.node-version }}
       shell: bash
     - name: Checkout source
       uses: actions/checkout@v3
     - name: install node
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ github.events.inputs.node-version }}
+        node-version: ${{ github.event.inputs.node-version }}
         cache: 'npm'
         registry-url: 'https://npm.pkg.github.com'
     - name: Keep it busy
