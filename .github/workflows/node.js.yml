@@ -40,7 +40,7 @@ jobs:
     - name: Keep it busy
       run: |
         echo Node Version: $(node --version)
-        for item in {0..6}
+        for item in {0..4}
         do
           echo Running $item
           sleep 10
