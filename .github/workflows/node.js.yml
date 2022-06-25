@@ -26,8 +26,8 @@ jobs:
     steps:
     - name: Show selected version
       run: |
-        echo "Using build prefix: ${BUILD_PREFIX}"
-        echo "Installing node version: ${{ github.events.inputs.node-version }}
+        echo Using build prefix: ${BUILD_PREFIX}
+        echo Installing node version: ${{ github.events.inputs.node-version }}
       shell: bash
     - name: install node
       uses: actions/setup-node@v2
