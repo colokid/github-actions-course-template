@@ -39,6 +39,7 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
     - name: Keep it busy
       run: |
+        echo Node Version: $(node --version)
         for item in {0..6}
         do
           echo Running $item
